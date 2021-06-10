@@ -47,6 +47,22 @@ Using the burger object below do the following:
   For example: burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2
 */
 
+export const burger = {
+  name: "Burger", 
+  price: 18, 
+  category: "Lunch", 
+  /*Your code here*/
+  discount: function(string){
+    let discount = 0;
+    if(string === 'teacher' || string === 'student'){
+      return this.price - this.price * 0.25;;
+    }
+    else{
+      return this.price - this.price * 0.1;;
+    }
+
+  }
+}
 
 
 
